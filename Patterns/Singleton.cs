@@ -2,7 +2,7 @@
  * 单例模式
  */
 
-namespace GameFramework
+namespace GameBaseFramework.Patterns
 {
     public class Singleton<T> where T : class, new()
     {
