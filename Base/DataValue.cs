@@ -26,7 +26,7 @@ namespace GameBaseFramework.Base
             }
             set
             {
-                if (this != value)
+                if (this != value && _callback != null)
                 {
                     _callback(value);
                 }
@@ -51,6 +51,15 @@ namespace GameBaseFramework.Base
         public void Set(T value)
         {
             _data = value;
+        }
+
+        /// <summary>
+        /// 获取值
+        /// </summary>
+        /// <returns></returns>
+        public T Get()
+        {
+            return _value;
         }
 
         /// <summary>
