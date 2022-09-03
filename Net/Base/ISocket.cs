@@ -8,6 +8,6 @@ namespace GameFramework.Net
 {
     public interface ISocket
     {
-        public int SendTo(byte[] buffer, int size, IPEndPoint remoteEP);
+        //public int SendTo(byte[] buffer, int size, IPEndPoint remoteEP);
     }
 }

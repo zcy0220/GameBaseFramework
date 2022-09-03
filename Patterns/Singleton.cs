@@ -20,7 +20,7 @@ namespace GameBaseFramework.Patterns
             {
                 if (_instance == null)
                 {
-                    _instance = new();
+                    _instance = new T();
                 }
                 return _instance;
             }
