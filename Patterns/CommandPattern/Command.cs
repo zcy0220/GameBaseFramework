@@ -11,30 +11,34 @@ namespace GameBaseFramework.Patterns
     /// </summary>
     public enum ECmdPriority
     {
-        MinLevel     = -4,
-        LowLevel1    = -3,
-        LowLevel2    = -2,
-        LowLevel3    = -1,
-        DefaultLevel = 0,
-        HighLevel1   = 1,
-        HighLevel2   = 2,
-        HighLevel3   = 3,
-        MaxLevel     = 4,
+        Level0 = 0,
+        Level1 = 1,
+        Level2 = 2,
+        Level3 = 3,
+        Level4 = 4,
+        Level5 = 5,
+        Level6 = 6,
+        Level7 = 7,
+        Level8 = 8,
+        Level9 = 9,
     }
 
     /// <summary>
     /// 指令基类
     /// </summary>
-    public abstract class Command : TypeId
+    public abstract class Command : ITypeId
     {
         /// <summary>
-        /// 指令Id
-        /// 同时代表添加的顺序
+        /// 指令索引
         /// </summary>
-        public int Id;
+        public int Index = 0;
+        /// <summary>
+        /// 是否同步执行
+        /// </summary>
+        public bool SyncExecute = true;
         /// <summary>
         /// 指令优先级
         /// </summary>
-        public ECmdPriority Priority;
+        public ECmdPriority Priority = ECmdPriority.Level0;
     }
 }
