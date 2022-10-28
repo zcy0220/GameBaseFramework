@@ -1,7 +1,7 @@
-# GameBaseFramework.Base
+﻿/**
+ * 数据驱动测试
+ */
 
-### DataValue：数据驱动
-```C#
 using GameBaseFramework.Base;
 
 namespace GameBaseFramework.Demos
@@ -31,4 +31,3 @@ namespace GameBaseFramework.Demos
         }
     }
 }
-```
