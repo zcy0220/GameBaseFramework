@@ -1,7 +1,16 @@
 # GameBaseFramework.Base
+```sh
+└── Base                  # 基础通用模块
+    ├── DataValue         # 数据驱动
+    └── TypeId            # 类型对应Id
+```
 
-### DataValue：数据驱动
+### DataValue
 ```C#
+/**
+ * 数据驱动测试
+ */
+
 using GameBaseFramework.Base;
 
 namespace GameBaseFramework.Demos
