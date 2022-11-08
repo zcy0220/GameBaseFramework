@@ -10,6 +10,10 @@ namespace GameBaseFramework.Patterns
     public class CommandManager
     {
         /// <summary>
+        /// 指令唯一索引
+        /// </summary>
+        private static int _uniqueIndex = 0;
+        /// <summary>
         /// 指令链表
         /// </summary>
         private LinkedList<Command> _commandLinkedList = new LinkedList<Command>();
@@ -18,10 +22,6 @@ namespace GameBaseFramework.Patterns
         /// command -> receiver
         /// </summary>
         private Dictionary<int, CommandReceiver> _commandReceiverDict = new Dictionary<int, CommandReceiver>();
-        /// <summary>
-        /// 指令唯一索引
-        /// </summary>
-        private static int _uniqueIndex = 0;
 
         /// <summary>
         /// 添加指令接受器
