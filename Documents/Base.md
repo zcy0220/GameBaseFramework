@@ -42,3 +42,12 @@ namespace GameBaseFramework.Demos
     }
 }
 ```
+
+### Debuger
+```C#
+/**
+ * Unity下适用的Debuger
+ */
+Debuger.EnableLog = true;
+Debuger.Init(new UnityDebugConsole());
+```

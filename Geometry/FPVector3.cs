@@ -2,7 +2,7 @@
  * 定点数3维向量
  */
 
-namespace GameBaseFramework.FixedPoint
+namespace GameBaseFramework.Geometry
 {
     public struct FPVector3
     {

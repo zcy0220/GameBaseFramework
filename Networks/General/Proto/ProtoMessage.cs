@@ -1,10 +1,10 @@
 ﻿/**
- * 网络消息
+ * 协议消息
  */
 
 namespace GameBaseFramework.Networks
 {
-    public class NetMessage
+    public class ProtoMessage
     {
     }
 }

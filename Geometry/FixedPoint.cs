@@ -2,7 +2,7 @@
  * 定点数
  */
 
-namespace GameBaseFramework.FixedPoint
+namespace GameBaseFramework.Geometry
 {
     public struct FP
     {
@@ -97,6 +97,18 @@ namespace GameBaseFramework.FixedPoint
         {
             x.Value = -x.Value;
             return x;
+        }
+        #endregion
+
+        #region 比较
+        public static bool operator <(FP x, FP y)
+        {
+            return x.Value < y.Value;
+        }
+
+        public static bool operator >(FP x, FP y)
+        {
+            return x.Value > y.Value;
         }
         #endregion
     }

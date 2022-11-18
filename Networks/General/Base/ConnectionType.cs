@@ -6,8 +6,8 @@ namespace GameBaseFramework.Networks
 {
     public enum EConnectionType
     {
-        Tcp,
-        Udp,
-        Kcp,
+        TCP,
+        UDP,
+        KCP
     }
 }
