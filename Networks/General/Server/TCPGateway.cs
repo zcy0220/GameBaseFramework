@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Assets.Scripts.Frameworks.GameBaseFramework.Networks.General.Server
+namespace GameBaseFramework.Networks
 {
     interface TCPGateway
     {

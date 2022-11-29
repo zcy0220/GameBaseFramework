@@ -110,7 +110,7 @@ namespace GameBaseFramework.Base
         }
 
         /// <summary>
-        /// _data
+        /// !=
         /// </summary>
         /// <param name="a"></param>
         /// <param name="b"></param>
